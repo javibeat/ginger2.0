@@ -38,38 +38,11 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="GINGER REDWOOD">
-        </div>
-        <nav class="menu-desktop">
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="services.html">SERVICIOS</a></li>
-                <li><a href="about-me.html">SOBRE MI</a></li>
-                <li><a href="contact.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-        <nav class="menu-responsive">
-            <ul>
-                <li><a href="index.html"><i class="fa fa-home"></i> INICIO</a></li>
-                <li><a href="services.html"><i class="fas fa-spa"></i> SERVICIOS</a></li>
-                <li><a href="about-me.html"><i class="fa fa-user"></i> SOBRE MI</a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope"></i> CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="menu-container"><!-- El menú se cargará aquí --></div>
 
-    <footer>
-        <p>&copy; 2024 GINGER REDWOOD. All rights reserved.</p>
-    </footer>
 
-    <script>
-        // Este script puede usarse para incluir el menú en todas las páginas
-        // asumiendo que todas las páginas tienen elementos con los IDs 'header' y 'footer'
-        document.getElementById('header').innerHTML = document.querySelector('header').innerHTML;
-        document.getElementById('footer').innerHTML = document.querySelector('footer').innerHTML;
-    </script>
+
+    <script src="script.js" defer></script>
 
 </body>
 

@@ -3,6 +3,7 @@
     --text-color: #ffffff;
     --accent-color: #bb9a31;
     --secondary-color: #442884;
+    --green-color: #859864;
 }
 
 * {
@@ -25,14 +26,12 @@ header {
     z-index: 999;
 }
 
-/* Estilos para los enlaces */
 a {
     text-decoration: none;
 }
 
 /*----MENU-----*/
 
-/* Estilos para el menú de escritorio */
 .menu-desktop ul {
     list-style: none;
     display: flex;

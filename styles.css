@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #000000;
+    --text-color: #ffffff;
+    --accent-color: #bb9a31;
+    --secondary-color: #442884;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #faf3ea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none;
+}
+
+/*----MENU-----*/
+
+/* Estilos para el menú de escritorio */
+.menu-desktop ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.menu-desktop li {
+    padding: 10px;
+    text-transform: uppercase;
+    /* Para tener las opciones en mayúsculas */
+}
+
+.menu-desktop a {
+    text-decoration: none;
+    color: #977400;
+}
+
+/* Logo */
+.logo img {
+    height: 70px;
+    margin: 10px 15px 0 15px;
+    /* Cambiar según el tamaño deseado para el logo */
+}
+
+/* Estilos para el menú responsive */
+.menu-responsive {
+    display: none;
+    /* Oculto por defecto */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: none;
+        /* Ocultamos el menú de escritorio */
+    }
+
+    .menu-responsive {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        /* Cambiar por el color deseado */
+    }
+
+    .menu-responsive ul {
+        background-color: #9774004a; /* Color de fondo semitransparente */
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    .menu-responsive li {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-responsive a {
+        text-decoration: none;
+        color: #977400;
+        font-size: 15px;
+    }
+
+    .menu-responsive i {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+}
+
+/* Iconos de Font Awesome */
+.fa-home, .fa-concierge-bell, .fa-user, .fa-envelope {
+    font-size: 20px; /* Tamaño de los iconos */
+}

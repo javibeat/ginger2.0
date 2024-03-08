@@ -328,7 +328,7 @@ footer {
 /* Responsive design */
 @media (max-width: 768px) {
     .service-box {
-        width: calc(50% - 20px); /* Dos columnas en dispositivos medianos */
+        width: 100%;
     }
 }
 

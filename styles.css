@@ -28,6 +28,7 @@ header {
 
 a {
     text-decoration: none;
+    color: #bb9a31;
 }
 
 p {
@@ -51,7 +52,7 @@ p {
 
 .menu-desktop a {
     text-decoration: none;
-    color: #977400;
+    color: #bb9a31;
 }
 
 /* Logo */
@@ -70,6 +71,7 @@ p {
 /* Footer */
 footer {
     text-align: center;
+    width: 100%;
     padding: 20px;
     background-color: #faf3ea;
     color: #000;
@@ -117,7 +119,7 @@ footer {
 
     .menu-responsive a {
         text-decoration: none;
-        color: #977400;
+        color: #bb9a31;
         font-size: 15px;
     }
 
@@ -179,7 +181,7 @@ footer {
     font-size: 24px;
     cursor: pointer;
     animation: bounce 2s infinite;
-    border: 1px solid #977400;
+    border: 1px solid #bb9a31;
     border-radius: 10px;
     background-color: #ffffff;
     padding: 10px;
@@ -348,3 +350,30 @@ footer {
 .complemento h2 {
     margin-bottom: 25px;
 }
+
+.avatar {
+    width: 100px;
+    /* Ajusta el tamaño según necesites */
+    height: 100px;
+    border-radius: 50%;
+    /* Hace la imagen redonda */
+    display: block;
+    margin: 20px auto;
+    /* Centra la imagen */
+  }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }

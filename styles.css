@@ -71,7 +71,7 @@ p {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #ddd;
+    background-color: #faf3ea;
     color: #000;
 }
 
@@ -95,12 +95,12 @@ footer {
         position: fixed;
         bottom: 0;
         width: 100%;
-        background-color: #fff;
+        background-color: #faf3ea;
         /* Cambiar por el color deseado */
     }
 
     .menu-responsive ul {
-        background-color: #a9850e3a;
+        background-color: #faf3ea;
         /* Color de fondo semitransparente */
         list-style: none;
         display: flex;
@@ -280,6 +280,14 @@ footer {
     text-align: center;
 }
 
+.section3 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding: 50px 10px 50px;
+}
+
 /* Estilos para los recuadros de servicios */
 .service-boxes {
     max-width: 1080px;
@@ -327,6 +335,10 @@ footer {
 @media (max-width: 480px) {
     .service-box {
         width: 100%; /* Una columna en dispositivos pequeños */
+    }
+
+    .section3 {
+        margin: auto auto 50px;
     }
 }
 

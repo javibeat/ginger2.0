@@ -457,13 +457,13 @@ h4 {
 .next {
     right: 10px;
     /* Asegúrate de que este valor aleja el botón suficientemente hacia la derecha */
-    border-radius: 3px 0 0 3px;
+    border-radius: 3px;
 }
 
 .prev {
     left: 10px;
     /* Ajusta este valor según sea necesario para el botón izquierdo */
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px;
 }
 
 .prev:hover,

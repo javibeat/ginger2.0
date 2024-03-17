@@ -521,6 +521,58 @@ h4 {
     }
 }
 
+/*accordion*/
+
+.accordion {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.accordion-item {
+    background: #fff6d94d;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-item:hover {
+    background-color: var(--green-color);
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid var(--accent-color);
+    background: #fff;
+}
+
+.accordion-icon {
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(90deg);
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .accordion-content {
+        padding: 15px 10px;
+    }
+}
+
 .social-icons {
     display: flex;
     justify-content: center;

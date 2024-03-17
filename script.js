@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('menu-container').innerHTML = data;
             // Después de cargar el menú, inicializa cualquier funcionalidad dependiente de jQuery
             initializejQueryFeatures();
+            // Inicializa el acordeón después de cargar el menú
+            initializeAccordion();
         })
         .catch(error => console.error(error));
 });
@@ -70,4 +72,18 @@ if (slider) {
     slider.addEventListener('touchstart', handleTouchStart, false);
     slider.addEventListener('touchmove', handleTouchMove, false);
     slider.addEventListener('touchend', handleTouchEnd, false);
+}
+
+// Función para inicializar el acordeón
+function initializeAccordion() {
+    var accItems = document.getElementsByClassName('accordion-item');
+    for (var i = 0; i < accItems.length; i++) {
+        accItems[i].addEventListener('click', function() {
+            var current = document.getElementsByClassName('accordion-item active');
+            if (current.length > 0 && current[0] !== this) {
+                current[0].classList.remove('active');
+            }
+            this.classList.toggle('active');
+        });
+    }
 }

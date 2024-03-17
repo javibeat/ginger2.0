@@ -79,11 +79,25 @@ function initializeAccordion() {
     var accItems = document.getElementsByClassName('accordion-item');
     for (var i = 0; i < accItems.length; i++) {
         accItems[i].addEventListener('click', function() {
-            var current = document.getElementsByClassName('accordion-item active');
-            if (current.length > 0 && current[0] !== this) {
-                current[0].classList.remove('active');
+            // Remove 'active' class from any other open accordion item
+            var activeItems = document.querySelectorAll('.accordion-item.active');
+            for (var item of activeItems) {
+                if (item !== this) {
+                    item.classList.remove('active');
+                    item.nextElementSibling.style.display = 'none'; // Close the content panel
+                }
             }
+            
+            // Toggle 'active' class on the clicked accordion item
             this.classList.toggle('active');
+            
+            // Select the next element (accordion content) and toggle its display
+            var content = this.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
         });
     }
 }

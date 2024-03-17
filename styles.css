@@ -568,6 +568,11 @@ h4 {
 }
 
 @media (max-width: 768px) {
+
+    .accordion {
+        margin-bottom: 50px;
+    }
+
     .accordion-content {
         padding: 15px 10px;
     }

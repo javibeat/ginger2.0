@@ -218,6 +218,10 @@ footer {
 
 @media (max-width:768px) {
 
+    .scroll-down-arrow {
+        bottom: 200px;
+    }
+
     .logo-main {
         max-width: 90%;
         z-index: 10;

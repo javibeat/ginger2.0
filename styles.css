@@ -174,7 +174,7 @@ footer {
 }
 
 .logo-main {
-    max-width: 1080px;
+    max-width: 90%;
     z-index: 10;
 }
 
@@ -244,8 +244,8 @@ footer {
 }
 
 .section1 h1 {
-    color: var(--accent-color);
-    font-size: 24px;
+    color: var(--green-color);
+    font-size: 26px;
     margin-bottom: 50px;
 }
 

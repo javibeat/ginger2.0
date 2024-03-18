@@ -249,6 +249,10 @@ footer {
     margin-bottom: 50px;
 }
 
+.serv {
+    color: var(--accent-color);
+}
+
 .intro {
     display: flex;
     flex-direction: column;

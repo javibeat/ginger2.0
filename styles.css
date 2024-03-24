@@ -549,7 +549,7 @@ h4 {
 }
 
 .accordion-item:hover {
-    background-color: var(--green-color);
+    background-color: #85986440;
 }
 
 .accordion-content {

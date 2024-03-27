@@ -6,8 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('menu-container').innerHTML = data;
             // Después de cargar el menú, inicializa cualquier funcionalidad dependiente de jQuery
             initializejQueryFeatures();
-            // Inicializa el acordeón después de cargar el menú
+            // Inicializa el acordeón
             initializeAccordion();
+            // Abre el acordeón basado en el hash de la URL
+            openAccordionBasedOnUrl();
         })
         .catch(error => console.error(error));
 });
@@ -99,5 +101,20 @@ function initializeAccordion() {
                 content.style.display = 'block';
             }
         });
+    }
+}
+
+// Función para abrir un acordeón específico basado en el hash de la URL
+function openAccordionBasedOnUrl() {
+    const hash = window.location.hash; // Obtiene el hash de la URL
+    if (hash) {
+        // Intenta seleccionar el acordeón item con el id del hash
+        const accordionItem = document.querySelector(hash);
+        if (accordionItem) {
+            // Simula un evento de clic para abrir el acordeón
+            accordionItem.click();
+            // Opcional: Desplaza la página hacia el elemento acordeón
+            accordionItem.scrollIntoView();
+        }
     }
 }

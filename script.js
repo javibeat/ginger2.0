@@ -4,15 +4,41 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('menu-container').innerHTML = data;
-            // Después de cargar el menú, inicializa cualquier funcionalidad dependiente de jQuery
             initializejQueryFeatures();
-            // Inicializa el acordeón
             initializeAccordion();
-            // Abre el acordeón basado en el hash de la URL
+            initializeSubAccordion();
             openAccordionBasedOnUrl();
         })
         .catch(error => console.error(error));
 });
+
+function initializeSubAccordion() {
+    var subAccordions = document.querySelectorAll('.sub-accordion-header');
+    subAccordions.forEach(function(subAcc) {
+        // Inicialmente esconde todos los contenidos de los sub-acordeones
+        var subContent = subAcc.nextElementSibling;
+        subContent.style.display = 'none';
+        
+        subAcc.addEventListener('click', function() {
+            // Para comportamiento similar al acordeón principal, cierra los otros sub-acordeones
+            var allSubContents = document.querySelectorAll('.sub-accordion-content');
+            allSubContents.forEach(function(content) {
+                if (content !== subContent) {
+                    content.style.display = 'none';
+                }
+            });
+            
+            // Alterna el acordeón clickeado
+            subContent.style.display = subContent.style.display === 'none' ? 'block' : 'none';
+            
+            // Alterna la clase 'active' y la rotación de la flecha (si existe)
+            var arrowIcon = subAcc.querySelector('.accordion-icon');
+            if (arrowIcon) {
+                arrowIcon.classList.toggle('rotate-icon');
+            }
+        });
+    });
+}
 
 function initializejQueryFeatures() {
     // Asegúrate de que jQuery esté cargado

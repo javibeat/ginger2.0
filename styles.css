@@ -610,6 +610,17 @@ h4 {
     }
 }
 
+.accordion-sub-item {
+    border: 1PX solid var(--green-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.rotate-icon {
+    transform: rotate(90deg);
+}
+
 .social-icons {
     display: flex;
     justify-content: center;

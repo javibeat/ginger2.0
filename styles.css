@@ -127,13 +127,14 @@ footer {
 
     .menu-responsive a {
         text-decoration: none;
-        color: #bb9a31;
+        color: #859864;
         font-size: 15px;
     }
 
     .menu-responsive i {
         display: flex;
         justify-content: center;
+        color: #bb9a31;
         margin-bottom: 5px;
     }
 }

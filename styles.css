@@ -302,7 +302,7 @@ footer {
     border-radius: 50%;
     display: block;
     margin-bottom: 20px;
-  }
+}
 
 .section2 {
     background-color: #fff6d94d;
@@ -637,37 +637,54 @@ h4 {
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     color: var(--text-color);
     background-color: var(--accent-color);
     border-radius: 50%;
-    width: 40px; /* Nuevo */
-    height: 40px; /* Nuevo */
+    width: 40px;
+    /* Nuevo */
+    height: 40px;
+    /* Nuevo */
     padding: 10px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none; /* Para asegurarse de que no hay subrayado en los enlaces */
-  }
-  
-  /* Si estás usando FontAwesome, asegúrate de que la clase 'fa' (o 'fas', 'fab', etc.) también esté configurada correctamente */
-  .fa, .fas, .fab { /* Estas clases deben corresponder a las que usas en tu HTML */
-    width: auto; /* Asegura que el icono no afecte el tamaño del enlace */
-    height: auto; /* Asegura que el icono no afecte el tamaño del enlace */
-  }
+    text-decoration: none;
+    /* Para asegurarse de que no hay subrayado en los enlaces */
+}
 
-  #whatsapp-button {
+/* Si estás usando FontAwesome, asegúrate de que la clase 'fa' (o 'fas', 'fab', etc.) también esté configurada correctamente */
+.fa,
+.fas,
+.fab {
+    /* Estas clases deben corresponder a las que usas en tu HTML */
+    width: auto;
+    /* Asegura que el icono no afecte el tamaño del enlace */
+    height: auto;
+    /* Asegura que el icono no afecte el tamaño del enlace */
+}
+
+#whatsapp-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
 }
 
 #whatsapp-button img {
-    width: 60px; /* Ajusta el tamaño del icono de WhatsApp */
+    width: 60px;
     height: 60px;
-    border-radius: 50%; /* Para hacer el icono circular */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra al botón */
+}
+
+@media (max-width: 768px) {
+
+    #whatsapp-button {
+
+        bottom: 60px;
+
+    }
+
 }

@@ -657,3 +657,17 @@ h4 {
     width: auto; /* Asegura que el icono no afecte el tamaño del enlace */
     height: auto; /* Asegura que el icono no afecte el tamaño del enlace */
   }
+
+  #whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+#whatsapp-button img {
+    width: 60px; /* Ajusta el tamaño del icono de WhatsApp */
+    height: 60px;
+    border-radius: 50%; /* Para hacer el icono circular */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra al botón */
+}
